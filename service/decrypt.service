@@ -1,0 +1,10 @@
+[Unit]
+Description=Decryption
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/client/Documents/GSLW/TP3/src/decrypt.sh
+
+[Install]
+WantedBy=multi-user.target
